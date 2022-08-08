@@ -1,0 +1,88 @@
+.o-herobanner{
+    position: relative;
+    top: -13vh;
+    left: 0;
+    
+    width: 100vw;
+    height: 80vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width:900px){
+        top: -22vh;
+    }
+
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        
+        background: url(../img/bg_cover.jpg);
+        background-size: cover;
+        background-position: center;
+        z-index: -1;
+        opacity: 0.2;
+    }
+
+    &__title{
+        width: 100vw;
+        margin-top: 120px;
+
+        font-family: "Aura",sans-serif;
+        font-size: 15em;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+        @media (max-width:1200px){
+            font-size: 11em;
+        }
+        @media (max-width:900px){
+            font-size: 8em;
+            justify-items: center;
+        }
+        @media (max-width:600px){
+            font-size: 5em;
+            justify-items: center;
+        }
+        @media (max-width: 400px){
+            font-size: 4em;
+            justify-items: center;
+        }
+
+       .title{
+           grid-column: span 2;
+
+
+        &-premier{
+            text-align: start;
+            margin-left: -10px;
+
+            @media(max-width:900px){
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+        
+        &-second{
+            text-align: end;
+            margin-right: -11px;
+            color: #fff;
+            -webkit-text-stroke: 0 transparent;
+
+            @media(max-width:600px){
+                margin-right: 0;
+                text-align: center;
+            }
+        }
+       }
+    }
+}

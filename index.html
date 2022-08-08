@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Test SweetPunk</title>
+</head>
+<body>
+    <header class="o-header">
+        <div class="o-header__burger">
+            <a href="./index.html"><img src="./assets/img/logo.png" alt="Logo Franco-American Cultural Fund" class="o-header__burger-logo"></a>
+            <div onclick="openMenu()" class="o-header__burger-icon" id="burger-menu">
+                <span></span>
+            </div>
+        </div>
+        <nav class="o-header__nav" id="nav">
+            <div class="o-header__nav__menu">
+                <div class="menu-icon">
+                    <img src="./assets/img/nav-menu-header-icon.png" alt="">    
+                    le live
+                </div>
+                <div class="menu-close" id="close-menu" onclick="closeMenu()">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="o-header__nav__block o-header__nav__block-actus">
+                <h2 class="title-category">Dernières actus</h2>
+                <div class="container">
+                    <div class="thumb">
+                        <img src="./assets/img/nav-thumb-actus.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="content__category content__category-rencontres">
+                            <h4 class="content__category__text">Rencontres</h4>
+                        </div>
+                        <div class="content__date-publication">
+                            25.05.2021
+                        </div>
+                    </div>
+                    <div class="title-article">
+                        <h3 class="title-article__text">27eme édition des rencontres cinématographiques de Dijon</h3>
+                    </div>
+                </div>
+                
+               <div class="container">
+                <div class="thumb">
+                    <img src="./assets/img/nav-thumb-actus2.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="content__category content__category-festival">
+                        <h4 class="content__category__text">Festival</h4>
+                    </div>
+                    <div class="content__date-publication">
+                        25.05.2021
+                    </div>
+                </div>
+                <div class="title-article">
+                    <h3 class="title-article__text">Festival Colcoa 2018 : La programmation</h3>
+                </div>
+               </div>
+            </div>
+            <div class="o-header__nav__block o-header__nav__block-news">
+                <h2 class="title-category">News</h2>
+                <div class="container">
+                    <div class="container-header">
+                        <a href="#" class="container-header__title">
+                            <i class="fa fa-twitter " aria-hidden="true"></i>
+                            <h4 class="tag">#colcoa</h4>
+                        </a>   
+                        <div class="date-publication">
+                        25.05.2021
+                        </div>
+                    </div>            
+                    <p class="container-paragraphe">
+                        New in 2021, COLCOA VIRTUAL CINEMA. Our program is open all year round and 
+                        accessible to anyone in North America. New titles are added every Friday.
+                        Link in bio
+                        <br>
+                        <span class="container-paragraphe__tags">#colcoa #frenchcinema #frenchfilms #french #cinema</span>
+                    </p>   
+                    <a href="#" class="container-compte">
+                        <img src="./assets/img/colcoa-logo.webp" alt="">
+                        <div class="container-compte__nom">
+                            <h4>COLCOA</h4>
+                            <h4 class="container-compte__nom-link">@COLCOA</h4>
+                        </div>
+                    </a>     
+                </div>
+                <div class="container">
+                    <div class="container-header">
+                        <a href="#" class="container-header__title">
+                            <i class="fa fa-twitter " aria-hidden="true"></i>
+                            <h4 class="tag">#colcoa</h4>
+                        </a>   
+                        <div class="date-publication">
+                        25.05.2021
+                        </div>
+                    </div>            
+                    <p class="container-paragraphe">
+                        New in 2021, COLCOA VIRTUAL CINEMA. Our program is open all year round and 
+                        accessible to anyone in North America. New titles are added every Friday.
+                        Link in bio
+                        <br>
+                        <span class="container-paragraphe__tags">#colcoa #frenchcinema #frenchfilms #french #cinema</span>
+                    </p>   
+                    <a href="#" class="container-compte">
+                        <img src="./assets/img/colcoa-logo.webp" alt="">
+                        <div class="container-compte__nom">
+                            <h4>COLCOA</h4>
+                            <h4 class="container-compte__nom-link">@COLCOA</h4>
+                        </div>
+                    </a>      
+                </div>
+            
+            </div>
+            <div class="o-header__nav__block o-header__nav__block-temoignages">
+                <h2 class="title-category">Derniers témoignages</h2>
+              <div class="container-wrap">
+                <div class="container">
+                    <div class="container-portrait">
+                        <img src="./assets/img/temoignage-f.png" alt="">
+                    </div>
+                    <div class="container-content">
+                        <h4 class="container-content__tag">#Actrice</h4>
+                        <h2 class="container-content__nom">Nathalie Baye</h2>
+                        <p class="container-content__role">Actrice française</p>
+                    </div>      
+                </div>
+                <div class="container">
+                    <div class="container-portrait">
+                        <img src="./assets/img/temoignage-h.png" alt="">
+                    </div>
+                    <div class="container-content">
+                        <h4 class="container-content__tag">#Réalisateur</h4>
+                        <h2 class="container-content__nom">Martin Scorsese</h2>
+                        <p class="container-content__role">Président de " The Film Foundation "</p>
+                    </div>      
+                </div>
+              </div>
+            </div>
+            <div class="o-header__nav__block o-header__nav__block-events">
+                <h2 class="title-category">Prochains évènements</h2>
+                <div class="container">
+                    <h4 class="container-titre">Festival Colcoa</h4>
+                    <div class="container-lieu">
+                        <div class="container-lieu__flag">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="">
+                        </div>
+                        <p>Los Angeles</p>
+                    </div>
+                    <p class="container-date">25.05.2021</p>
+                </div>
+                <div class="container">
+                    <h4 class="container-titre">Festival du Cinéma Américain</h4>
+                    <div class="container-lieu">
+                        <div class="container-lieu__flag">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="">
+                        </div>
+                        <p>Deauville</p>
+                    </div>
+                    <p class="container-date">25.05.2021</p>
+                </div>
+                <div class="container">
+                    <h4 class="container-titre">Les rencontres Cinématographiques de Dijon</h4>
+                    <div class="container-lieu">
+                        <div class="container-lieu__flag">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" alt="">
+                        </div>
+                        <p>Los Angeles</p>
+                    </div>
+                    <p class="container-date">25.05.2021</p>
+                </div>
+            </div>
+            <div class="o-header__nav__block o-header__nav__block-videos">
+                <h2 class="title-category">Vidéos</h2>
+                <div class="container">
+                    <div class="container-video">
+                    <video poster="./assets/img/video-cover1.webp">
+                        <source src="./assets/video/meme.mp4" type="video/mp4">
+                    </video>
+                    </div>
+                    <div class="container-nom">
+                        <div class="container-nom__category container-nom__category-festival">
+                            <h4 class="container-nom__category__text">Lumière sur</h4>
+                        </div>
+                        <div class="container-nom__title">
+                            <h3 class="title-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        </div> 
+                        <div class="container-nom__date-publication">
+                            25.05.2021
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="container-video">
+                    <video poster="./assets/img/video-cover1.webp">
+                        <source src="./assets/video/meme.mp4" type="video/mp4">
+                    </video>
+                    </div>
+                    <div class="container-nom">
+                        <div class="container-nom__category container-nom__category-rencontres">
+                            <h4 class="container-nom__category__text">Lumière sur</h4>
+                        </div>
+                        <div class="container-nom__title">
+                            <h3 class="title-article__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+                        </div> 
+                        <div class="container-nom__date-publication">
+                            25.05.2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="o-herobanner">
+            
+            <h1 class="o-herobanner__title">
+                <span class="title title-premier">Deux pays </span>
+                <span class="title title-second">une culture</span></h1>
+        </div>
+        <div class="o-actualites">
+            <h1 class="o-actualites__title">actualités</h1>
+            <div class="o-actualites__grid">
+                <div class="m-card m-card-open">
+                    <img src="./assets/img/card-open.png" alt="">
+                    <div class="m-card__infos">
+                        <h4 class="m-card__infos__category m-card__infos__category-film">
+                            Film
+                        </h4>
+                        <h4 class="m-card__infos__publication">
+                            Juin 2021
+                        </h4>
+                    </div>
+                    <h2 class="m-card__title">Les Misérables décroche le Prix d'Ornano-Valenti 2019</h2>
+                </div>
+                <div class="m-card">
+                    <img src="./assets/img/card-open.png" alt="">
+                    <div class="m-card__infos">
+                        <h4 class="m-card__infos__category m-card__infos__category-festival">
+                            Festival
+                        </h4>
+                        <h4 class="m-card__infos__publication">
+                            Mai 2021
+                        </h4>
+                    </div>
+                    <h2 class="m-card__title">Le colcoa 2019 dévoile son palmarès</h2>
+                </div>
+                <div class="m-card">
+                    <img src="./assets/img/card-open.png" alt="">
+                    <div class="m-card__infos">
+                        <h4 class="m-card__infos__category m-card__infos__category-rencontres">
+                            Rencontres
+                        </h4>
+                        <h4 class="m-card__infos__publication">
+                            Mai 2021
+                        </h4>
+                    </div>
+                    <h2 class="m-card__title">Les Misérables décroche le Prix d'Ornano-Valenti 2019</h2>
+                </div>
+                <div class="m-card">
+                    <img src="./assets/img/card-open.png" alt="">
+                    <div class="m-card__infos">
+                        <h4 class="m-card__infos__category m-card__infos__category-film">
+                            Film
+                        </h4>
+                        <h4 class="m-card__infos__publication">
+                            Juin 2021
+                        </h4>
+                    </div>
+                    <h2 class="m-card__title">Les Misérables décroche le Prix d'Ornano-Valenti 2019</h2>
+                </div>
+                <div class="m-card m-card-open">
+                    <img src="./assets/img/card-open.png" alt="">
+                    <div class="m-card__infos">
+                        <h4 class="m-card__infos__category m-card__infos__category-film">
+                            Film
+                        </h4>
+                        <h4 class="m-card__infos__publication">
+                            Juin 2021
+                        </h4>
+                    </div>
+                    <h2 class="m-card__title">Les Misérables décroche le Prix d'Ornano-Valenti 2019</h2>
+                </div>
+                <div class="m-card">
+                    <img src="./assets/img/card-open.png" alt="">
+                    <div class="m-card__infos">
+                        <h4 class="m-card__infos__category m-card__infos__category-festival">
+                            Festival
+                        </h4>
+                        <h4 class="m-card__infos__publication">
+                            Mai 2021
+                        </h4>
+                    </div>
+                    <h2 class="m-card__title">Le colcoa 2019 dévoile son palmarès</h2>
+                </div>
+                <div class="m-card">
+                    <img src="./assets/img/card-open.png" alt="">
+                    <div class="m-card__infos">
+                        <h4 class="m-card__infos__category m-card__infos__category-rencontres">
+                            Rencontres
+                        </h4>
+                        <h4 class="m-card__infos__publication">
+                            Mai 2021
+                        </h4>
+                    </div>
+                    <h2 class="m-card__title">Les Misérables décroche le Prix d'Ornano-Valenti 2019</h2>
+                </div>
+                <div class="m-card">
+                    <img src="./assets/img/card-open.png" alt="">
+                    <div class="m-card__infos">
+                        <h4 class="m-card__infos__category m-card__infos__category-film">
+                            Film
+                        </h4>
+                        <h4 class="m-card__infos__publication">
+                            Juin 2021
+                        </h4>
+                    </div>
+                    <h2 class="m-card__title">Les Misérables décroche le Prix d'Ornano-Valenti 2019</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/7d5baa2c2e.js" crossorigin="anonymous"></script>
+</body>
+</html>

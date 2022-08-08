@@ -1,0 +1,487 @@
+.o-header{
+    width: 100vw;
+    position: relative;
+    padding-top: 30px;
+    z-index: 1;
+
+    &__burger{
+        padding: 0 30px;
+        top: 0;
+        left: 0;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        &-logo{
+            width: 6em;
+        }
+
+        &-icon{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            cursor: pointer;
+
+            span{
+                width:35px;
+                height: 3px;
+                background: #fff;
+                border-radius: 5px;
+
+                margin: 5px 0;
+            }
+
+            &::before,&::after{
+                content: "";
+                width:35px;
+                height: 3px;
+                background: #fff;
+                border-radius: 5px;
+            }
+        }
+    }
+
+    &__nav{
+        width: calc(100vw / 3);
+        height: 90vh;
+        background: $pink-bg;
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 50px;
+        overflow-y: scroll;
+
+        position: fixed;
+        right: -44vw;
+
+        transition: 1s ease-in;
+        transition-delay: 0;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        @media (max-width:900px){
+            
+            right: -48vw;
+        }
+
+        @media (max-width:600px){
+            padding: 20px;
+            width: 91%;
+            height: 96vh;
+            right: -104vw;
+        }
+
+        &__menu{
+            font-family: "Aura",sans-serif;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu-icon{
+                width:30%;
+
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 5px;
+
+                font-family: "Aura",sans-serif;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 16px;
+
+                img{
+                    width: 30%;
+                }
+            }
+
+            .menu-close{
+                padding:22px 15px;
+                border: 1px solid #fff;
+                border-radius: 50%;
+                cursor: pointer;
+
+                span{
+                    display: block;
+                    width: 15px;
+                    height: 2px;
+                    background: #fff;
+                    border-radius: 5px;
+
+                    &:nth-child(1){
+                        transform: rotate(45deg);
+                    }
+
+                    &:nth-child(2){
+                        transform: rotate(-45deg);
+                        margin-top: -2px;
+                    }
+                }
+            }
+        }
+
+        &__block{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+
+            
+            &::before{
+                content: "";
+                width: 100%;
+                height: 2px;
+                background-color: #fff;
+                margin-bottom: 15px;
+            }
+            
+            .title-category{
+                font-family: 'Aura',sans-serif;
+                font-size: 2em;
+                text-transform: uppercase;
+                color: transparent;
+                -webkit-text-stroke-width: 0.5px;
+                -webkit-text-stroke-color: #fff;
+            }
+            &-actus{
+                
+                .container{
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 15px;
+                    margin-bottom: 40px;
+                    
+                    .thumb{
+                        width: 100%;
+                        overflow: hidden;
+                        margin: 25px 0 10px 0;
+        
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .content{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+        
+                        &__category{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 10px;
+        
+                            &-rencontres{
+                                &::before{
+                                    content: '';
+                                    width: 20px;
+                                    height: 10px;
+                                    background: $cat-rencontres;
+                                }
+                            }
+                            &-festival{
+                                &::before{
+                                    content: '';
+                                    width: 20px;
+                                    height: 10px;
+                                    background: $cat-festival;
+                                }
+                            }
+                            
+                            &__text{
+                                font-family: 'Aura',sans-serif;
+                                font-size: 13px;
+                                text-transform: uppercase;
+                                color: #fff;
+                            }
+                        }
+        
+                        &__date-publication{
+                            font-family: 'Poppins',sans-serif;
+                            font-weight: 300;
+                            font-size: 13px;
+                            color: #fff;
+                        }
+                    }
+                    .title-article{
+                        &__text{
+                            font-family: "Aura",sans-serif;
+                            font-size: 20px;
+                            color: #fff;
+                        }
+                    }
+                }
+    
+            }
+            &-news{
+                margin-top: 0;
+
+                .title-category{
+                    margin-bottom: 25px;
+                }
+                .container{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    border-bottom: 0.5px solid rgba($color: #000000, $alpha: 0.1);
+                    border-top: 0.5px solid rgba($color: #000000, $alpha: 0.1);
+                    padding: 20px 0;
+                    &-header{
+                        &__title{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            gap: 5px;
+
+                            i{
+                                color: $twitter;
+                            }
+                            .tag{
+                                font-family: "Poppins",sans-serif;
+                                font-weight: 800;
+                                font-size: 13px;
+                                text-transform: uppercase;
+                                color: #fff;
+                            }
+                        }
+                        .date-publication{
+                            font-family: 'Poppins',sans-serif;
+                            font-weight: 300;
+                            font-size: 13px;
+                            color: #fff;
+                            text-align: end;
+                        }
+                    }
+                    &-paragraphe{
+                        font-family: 'Poppins',sans-serif;
+                        font-weight: 300;
+                        font-size: 15px;
+                        color: #fff;
+                        line-height: 1.5em;
+
+                        &__tags{
+                            font-weight: 800;
+                        }
+                    }
+                    &-compte{
+                        width: 30%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 10px;
+
+                        img{
+                            width: 30%;
+                        }
+
+                        &__nom{
+                            font-family: 'Poppins',sans-serif;
+                            font-size: 13px;
+                            font-weight: 800;
+                            color: #fff;
+
+                            &-link{
+                                color: rgba($color: #000, $alpha: 0.3);
+                                margin-top: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-temoignages{
+                .title-category{
+                    margin-bottom: 25px;
+                }
+                .container-wrap{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    column-gap: 10px;
+
+                    @media (max-width:600px){
+                        grid-template-columns: 1fr;
+                        row-gap: 25px;
+                    }
+
+                    .container{
+                        width: 100%;
+
+                        &-portrait{
+                            width: 100%;
+                            margin-bottom: 25px;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                        &-content{
+                            font-family: "Poppins",sans-serif;
+                            color: #fff;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 15px;
+
+                            &__tag{
+                                font-weight: 300;
+                                font-size: 13px;
+                                text-transform: uppercase;
+                            }
+                            &__nom{
+                                font-family: "Aura",sans-serif;
+                                font-size: 20px;
+                            }
+
+                            &__role{
+                                font-weight: 400;
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-events{
+                .title-category{
+                    margin-bottom: 25px;
+                }
+                .container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    font-family: "Poppins",sans-serif;
+                    color: #fff;
+
+                    padding: 20px 0;
+                    border-top: 0.5px solid rgba($color: #000000, $alpha: 0.1);
+                    border-bottom: 0.5px solid rgba($color: #000000, $alpha: 0.1);
+
+                    &-titre{
+                        width: 50%;
+                        font-weight: 800;
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                    &-lieu{
+                        width: calc(100% / 3);
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        gap: 5px;
+
+                        &__flag{
+                            width: 10%;
+                            background-color: #fff;
+                            border-radius: 100%;
+                            padding: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            img{
+                                width:100%;
+                            }
+                        }
+
+                       p{
+                            font-size: 13px;
+                            font-weight: 300;
+                        }
+                    }
+                    &-date{
+                        font-size: 13px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            &-videos{
+                
+                .title-category{
+                    margin-bottom: 25px;
+                }
+                .container{
+                    position: relative;
+                    margin: 5px 0;
+                    &-video{
+                        width: 100%;
+                        height: 300px;
+                        overflow: hidden;
+                        background: #000;
+
+                        @media (max-width:600px){
+                            height: 250px;
+                        }
+
+                        video{
+                            height: 100%;
+                            opacity: 0.7;
+                        }
+                    }
+
+                    &-nom{
+                        font-family: "Poppins",sans-serif;
+                        color: #fff;
+
+                        position: absolute;
+                        bottom: 1.5em;
+                        left: 1em;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        padding-right: 60px;
+
+                        &__category{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            &-festival{
+                                &::before{
+                                    content: "";
+                                    width: 20px;
+                                    height: 10px;
+                                    background: $cat-festival;
+                                    margin-right: 5px;
+                                }
+                            }
+                            &-rencontres{
+                                &::before{
+                                    content: "";
+                                    width: 20px;
+                                    height: 10px;
+                                    background: $cat-rencontres;
+                                    margin-right: 5px;
+                                }
+                            }
+
+                            &__text{
+                                font-family: "Aura",sans-serif;
+                                font-size: 13px;
+                                text-transform: uppercase;
+                                
+                            }
+                        }
+                        &__title{
+                            font-family: "Aura",sans-serif;
+                            color: #fff;
+                            font-size: 22px;
+                        }
+                        &__date-publication{
+                            color: #fff;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
